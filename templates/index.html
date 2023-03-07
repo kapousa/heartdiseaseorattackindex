@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<div class="main-block">
+    <form action="/">
+        <h1>Create a free account</h1>
+        <fieldset>
+            <legend>
+                <h3>Personal Details</h3>
+            </legend>
+            <div class="personal-details">
+                <div>
+                    <div><label>Age*</label><input type="number" name="Age" required number></div>
+                    <div>
+                        <label>Education*</label>
+                        <select name="Education" required>
+                            <option value="1">None</option>
+                            <option value="2">Primary School</option>
+                            <option value="3">Secondary School</option>
+                            <option value="4">Bachelor</option>
+                            <option value="5">Master Degree</option>
+                            <option value="6">PHD</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Sex*</label>
+                        <div class="gender">
+                            <input type="radio" value="0" id="male" name="Sex" checked required/>
+                            <label for="male" class="radio">Male</label>
+                            <input type="radio" value="1" id="female" name="sex" required/>
+                            <label for="female" class="radio">Female</label>
+                        </div>
+                    </div>
+                    <div><label>Income*</label><input type="number" name="Income" required></div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Case Conditions</h3>
+            </legend>
+            <div class="account-details">
+                <div><label>BMI*</label><input type="number" name="BMI" required></div>
+                <div>
+                    <label>Diabetes*</label>
+                    <select name="Diabetes" required>
+                        <option value="0">None</option>
+                        <option value="2">Type 1</option>
+                        <option value="3">Type 2</option>
+                    </select>
+                </div>
+                <div><label>General Health*</label><input type="number" name="GenHlth" required></div>
+                <div><label>Mental Health*</label><input type="number" name="MentHlth" required></div>
+                <div><label>Physical Health*</label><input type="number" name="PhysHlth" required></div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Other Conditions</h3>
+            </legend>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="HighBP"><span>HighBP</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="HighChol"><span>HighChol</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="CholCheck"><span>CholCheck</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="Smoker"><span>Smoker</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="Stroke"><span>Stroke</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="PhysActivity"><span>PhysActivity</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="Fruits"><span>Fruits</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="Veggies"><span>Veggies</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="HvyAlcoholConsump"><span>HvyAlcoholConsump</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="AnyHealthcare"><span>AnyHealthcare</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="NoDocbcCost"><span>NoDocbcCost</span>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox"
+                           name="DiffWalk"><span>DiffWalk</span>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit" href="/">Submit</button>
+    </form>
+</div>
+</body>
+</html>
